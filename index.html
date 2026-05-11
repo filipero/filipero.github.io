@@ -7,232 +7,26 @@
     <title>Filipe Oliveira</title>
     <meta name="description"
         content="Filipe Oliveira builds simple, practical apps including EasyTourney for iPhone and iPad.">
-    <style>
-        :root {
-            color-scheme: light dark;
-            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            line-height: 1.5;
-            --background: #f7f4ef;
-            --surface: #ffffff;
-            --text: #172026;
-            --muted: #5f6972;
-            --accent: #0b6bcb;
-            --accent-strong: #074f97;
-            --border: #d9dfd5;
-            --shadow: 0 20px 50px rgba(23, 32, 38, 0.12);
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            background:
-                linear-gradient(120deg, rgba(11, 107, 203, 0.08), transparent 32%),
-                linear-gradient(240deg, rgba(22, 121, 88, 0.10), transparent 36%),
-                var(--background);
-            color: var(--text);
-        }
-
-        main {
-            width: min(1000px, calc(100% - 32px));
-            margin: 0 auto;
-            padding: 56px 0;
-        }
-
-        .hero {
-            display: grid;
-            grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-            gap: 24px;
-            align-items: stretch;
-        }
-
-        .intro,
-        .app-panel,
-        .utility-links {
-            background: rgba(255, 255, 255, 0.86);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-        }
-
-        .intro {
-            padding: clamp(28px, 5vw, 56px);
-        }
-
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin: 0 0 18px;
-            color: var(--accent-strong);
-            font-size: 0.82rem;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        .eyebrow::before {
-            content: "";
-            width: 10px;
-            height: 10px;
-            border-radius: 999px;
-            background: #167958;
-        }
-
-        h1 {
-            max-width: 11ch;
-            margin: 0 0 18px;
-            font-size: clamp(2.6rem, 7vw, 5.2rem);
-            line-height: 0.95;
-            letter-spacing: 0;
-        }
-
-        p {
-            margin: 0 0 16px;
-        }
-
-        .lead {
-            max-width: 620px;
-            color: var(--muted);
-            font-size: clamp(1.05rem, 2vw, 1.25rem);
-        }
-
-        .actions,
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 28px;
-        }
-
-        a {
-            color: var(--accent-strong);
-        }
-
-        .button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box;
-            min-height: 44px;
-            padding: 0 18px;
-            border: 1px solid var(--accent);
-            border-radius: 8px;
-            background: var(--accent);
-            color: #ffffff;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        .button.secondary {
-            background: transparent;
-            color: var(--accent-strong);
-        }
-
-        .app-panel {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 32px;
-            min-height: 360px;
-            padding: 28px;
-            background: #172026;
-            color: #f7f4ef;
-            border-color: rgba(255, 255, 255, 0.18);
-        }
-
-        .app-icon {
-            display: block;
-            width: 72px;
-            height: 72px;
-            border-radius: 18px;
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
-        }
-
-        .app-panel h2,
-        .utility-links h2 {
-            margin: 22px 0 10px;
-            font-size: 1.6rem;
-            letter-spacing: 0;
-        }
-
-        .app-panel p {
-            color: #dbe2e7;
-        }
-
-        .app-panel .button {
-            width: 100%;
-            margin-top: 20px;
-            background: #f7f4ef;
-            border-color: #f7f4ef;
-            color: #172026;
-        }
-
-        .utility-links {
-            margin-top: 24px;
-            padding: 24px 28px;
-        }
-
-        .utility-links h2 {
-            margin-top: 0;
-            font-size: 1.1rem;
-        }
-
-        .utility-links p {
-            color: var(--muted);
-        }
-
-        .links {
-            margin-top: 16px;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --background: #11161a;
-                --surface: #172026;
-                --text: #f7f4ef;
-                --muted: #c4cbd0;
-                --accent: #6bb6ff;
-                --accent-strong: #9fd0ff;
-                --border: #35404a;
-                --shadow: 0 20px 50px rgba(0, 0, 0, 0.32);
-            }
-
-            .intro,
-            .utility-links {
-                background: rgba(23, 32, 38, 0.88);
-            }
-
-            .button:not(.secondary) {
-                color: #08131f;
-            }
-        }
-
-        @media (max-width: 760px) {
-            main {
-                padding: 24px 0;
-            }
-
-            .hero {
-                grid-template-columns: 1fr;
-            }
-
-            .app-panel {
-                min-height: auto;
-            }
-
-            .actions,
-            .links {
-                flex-direction: column;
-            }
-
-            .button {
-                width: 100%;
-                box-sizing: border-box;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <header class="site-nav">
+        <div class="site-nav-inner">
+            <a class="brand" href="index.html">Filipe Oliveira</a>
+            <nav class="nav-apps" aria-label="Apps">
+                <details class="nav-app">
+                    <summary>EasyTourney</summary>
+                    <div class="nav-app-menu" role="menu">
+                        <a href="easytourney/privacy.html" role="menuitem">Privacy Policy</a>
+                        <a href="easytourney/support.html" role="menuitem">Support</a>
+                        <a href="https://apps.apple.com/gd/app/easytourney/id6762071689" role="menuitem">App Store</a>
+                    </div>
+                </details>
+            </nav>
+        </div>
+    </header>
+
     <main>
         <section class="hero" aria-label="About Filipe Oliveira">
             <div class="intro">
@@ -266,8 +60,8 @@
             <h2>Public App Files</h2>
             <p>This GitHub Pages site also hosts public app seller information for ad network verification.</p>
             <div class="links">
-                <a href="/app-ads.txt">View app-ads.txt</a>
-                <a href="/apps-ad.txt">View apps-ad.txt</a>
+                <a href="app-ads.txt">View app-ads.txt</a>
+                <a href="apps-ad.txt">View apps-ad.txt</a>
             </div>
         </section>
     </main>
