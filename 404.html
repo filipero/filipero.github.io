@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EasyTourney</title>
+    <meta name="description" content="Open this invite in EasyTourney, or download it from the App Store.">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .fallback {
+            width: min(560px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 64px 0;
+            text-align: center;
+        }
+
+        .fallback img {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+        }
+
+        .fallback h1 {
+            margin: 24px 0 8px;
+        }
+
+        .fallback p {
+            color: var(--muted);
+        }
+
+        .fallback .button {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="fallback">
+            <img src="/easytourney-icon.jpg" alt="EasyTourney app icon" width="80" height="80">
+            <h1 id="title">Page not found</h1>
+            <p id="message">The page you’re looking for doesn’t exist.</p>
+            <p id="cta" hidden>
+                <a class="button" href="https://apps.apple.com/gd/app/easytourney/id6762071689">Download on the App
+                    Store</a>
+            </p>
+            <p><a href="/">Go to homepage</a></p>
+        </div>
+    </main>
+
+    <script>
+        // GitHub Pages serves this file for any path that doesn't match a real
+        // file. Universal links such as /championship/join/<code> only reach the
+        // browser when the EasyTourney app is NOT installed, so for those paths
+        // we point the visitor to the App Store instead of a generic 404.
+        (function () {
+            var APP_STORE_URL = "https://apps.apple.com/gd/app/easytourney/id6762071689";
+            var isInvite = /^\/championship\/join\//.test(window.location.pathname);
+
+            if (isInvite) {
+                document.getElementById("title").textContent = "Get EasyTourney";
+                document.getElementById("message").textContent =
+                    "Install EasyTourney to open this invite, then tap the link again to join the tournament.";
+                document.getElementById("cta").hidden = false;
+                // Send mobile visitors straight to the App Store; desktop users
+                // still see the page (with the button) so the redirect isn't jarring.
+                if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                    window.location.replace(APP_STORE_URL);
+                }
+            }
+        })();
+    </script>
+</body>
+
+</html>
