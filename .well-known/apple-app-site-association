@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["3RZK7FM9ZK.Dev.Filipero.Championship"],
+        "components": [
+          {
+            "/": "/championship/join/*",
+            "comment": "Join a Championship tournament"
+          }
+        ]
+      }
+    ]
+  }
+}
