@@ -2,7 +2,7 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["3RZK7FM9ZK.Dev.Filipero.Championship"],
+        "appIDs": ["A3NQH6W8J9.Dev.Filipero.Championship"],
         "components": [
           {
             "/": "/championship/join/*",
