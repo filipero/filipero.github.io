@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dev.filipero.championship",
+      "sha256_cert_fingerprints": [
+        "98:A9:C5:2D:CC:50:44:7E:6F:AB:D8:23:6F:6B:23:81:C6:31:AF:D9:98:F2:7B:92:45:BB:CD:6F:21:54:96:E3"
+      ]
+    }
+  }
+]
