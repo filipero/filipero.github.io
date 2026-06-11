@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gizlilik Politikası — EasyTourney</title>
+    <meta name="description"
+        content="EasyTourney Gizlilik Politikası — uygulamanın hangi verileri topladığı, nasıl kullanıldığı ve haklarınız.">
+    <link rel="canonical" href="https://filipero.github.io/tr/easytourney/privacy.html">
+    <link rel="alternate" hreflang="en" href="https://filipero.github.io/easytourney/privacy.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://filipero.github.io/pt/easytourney/privacy.html">
+    <link rel="alternate" hreflang="es" href="https://filipero.github.io/es/easytourney/privacy.html">
+    <link rel="alternate" hreflang="fr" href="https://filipero.github.io/fr/easytourney/privacy.html">
+    <link rel="alternate" hreflang="de" href="https://filipero.github.io/de/easytourney/privacy.html">
+    <link rel="alternate" hreflang="it" href="https://filipero.github.io/it/easytourney/privacy.html">
+    <link rel="alternate" hreflang="nl" href="https://filipero.github.io/nl/easytourney/privacy.html">
+    <link rel="alternate" hreflang="ru" href="https://filipero.github.io/ru/easytourney/privacy.html">
+    <link rel="alternate" hreflang="tr" href="https://filipero.github.io/tr/easytourney/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://filipero.github.io/easytourney/privacy.html">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header class="site-nav">
+        <div class="site-nav-inner">
+            <a class="brand" href="/tr/">Filipe Oliveira</a>
+            <div class="nav-right">
+                <nav class="nav-apps" aria-label="Uygulamalar">
+                    <details class="nav-app">
+                        <summary>EasyTourney</summary>
+                        <div class="nav-app-menu" role="menu">
+                            <a href="/tr/easytourney/" role="menuitem">Genel Bakış</a>
+                            <a href="/tr/easytourney/privacy.html" role="menuitem">Gizlilik Politikası</a>
+                            <a href="/tr/easytourney/support.html" role="menuitem">Destek</a>
+                            <a href="https://apps.apple.com/app/apple-store/id6762071689?pt=128773250&amp;ct=EasyTourney-Campaign-01&amp;mt=8"
+                                role="menuitem">App Store</a>
+                        </div>
+                    </details>
+                </nav>
+                <details class="nav-app lang-select">
+                    <summary><span aria-hidden="true">🌐</span> TR</summary>
+                    <div class="nav-app-menu" role="menu" aria-label="Dil">
+                        <a href="/easytourney/privacy.html" role="menuitem" lang="en">English</a>
+                        <a href="/pt/easytourney/privacy.html" role="menuitem" lang="pt-BR">Português (BR)</a>
+                        <a href="/es/easytourney/privacy.html" role="menuitem" lang="es">Español</a>
+                        <a href="/fr/easytourney/privacy.html" role="menuitem" lang="fr">Français</a>
+                        <a href="/de/easytourney/privacy.html" role="menuitem" lang="de">Deutsch</a>
+                        <a href="/it/easytourney/privacy.html" role="menuitem" lang="it">Italiano</a>
+                        <a href="/nl/easytourney/privacy.html" role="menuitem" lang="nl">Nederlands</a>
+                        <a href="/ru/easytourney/privacy.html" role="menuitem" lang="ru">Русский</a>
+                        <a href="/tr/easytourney/privacy.html" role="menuitem" aria-current="true" lang="tr">Türkçe</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="content-card">
+            <p class="eyebrow">EasyTourney</p>
+            <h1>Gizlilik Politikası</h1>
+            <p class="subtitle">Son güncelleme: 4 Haziran 2026</p>
+
+            <p>
+                EasyTourney ("Uygulama"), Filipe Rodrigues Oliveira ("biz", "bizim") tarafından geliştirilen, iPhone
+                ve iPad için tek elemeli bir turnuva yöneticisidir. Uygulama <strong>varsayılan olarak
+                çevrimdışı</strong> çalışır ve ayrıca bir turnuvayı başkalarının katılabilmesi veya izleyebilmesi
+                için paylaşmanıza olanak tanıyan <strong>isteğe bağlı bir çevrimiçi mod</strong> sunar. Bu Gizlilik
+                Politikası, hangi bilgilerin toplandığını, nasıl kullanıldığını ve bu bilgilerle ilgili haklarınızı
+                açıklar.
+            </p>
+
+            <h2>1. Topladığımız Bilgiler</h2>
+
+            <h3>1a. Oluşturduğunuz Veriler — Varsayılan Olarak Yerel Depolanır</h3>
+            <p>
+                Uygulamayı kullanırken turnuvalar oluşturur ve katılımcı isimleri girersiniz. Kendinize sakladığınız
+                turnuvalar için <strong>bu veriler cihazınızda kalır.</strong> Bu veriler uygulamanın iPhone veya
+                iPad'inizdeki yerel SwiftData veritabanında saklanır, biz bunlara erişemeyiz ve hiçbir sunucuya
+                iletilmez. Bu yalnızca bir turnuvayı <strong>paylaşmayı veya bir turnuvaya katılmayı</strong>
+                seçerseniz değişir — aşağıdaki <em>Çevrimiçi ve Katılıma Açık Turnuvalar</em> bölümüne bakın.
+            </p>
+
+            <h3>1b. Çevrimiçi ve Katılıma Açık Turnuvalar — Firebase Firestore ve Authentication</h3>
+            <p>
+                Uygulama, başkalarının <strong>katılabilmesi</strong> veya canlı <strong>izleyebilmesi</strong> için
+                bir <strong>turnuvayı paylaşmanıza</strong> (bir QR kod veya link aracılığıyla) olanak tanır. Bu
+                çevrimiçi mod <strong>isteğe bağlıdır</strong> ve yalnızca açıkça paylaştığınız veya katıldığınız
+                turnuvalar için etkindir — tamamen yerel turnuvalar asla yüklenmez.
+            </p>
+            <p>
+                Bir paylaşılan turnuva oluşturduğunuzda veya başkasınınkine katıldığınızda, tüm katılımcıların ve
+                izleyicilerin senkronize kalması için aşağıdakiler <strong>Google Firebase Firestore</strong>
+                üzerinden senkronize edilir: turnuva adı ve ayarları, katılımcı ve takım isimleri (varsa takım üyesi
+                isimleri dahil), maç sonuçları, skorlar ve notlar, sizin <strong>görünen adınız</strong> ve ev
+                sahibinin görünen adı.
+            </p>
+            <p>
+                Herkesin görünümünü tutarlı tutmak için Uygulama, cihazınıza sabit bir anonim tanımlayıcı atayan
+                <strong>Firebase Anonymous Authentication</strong> ile oturum açar. <strong>E-posta, parola veya
+                hesap yoktur</strong> ve bu tanımlayıcı gerçek kimliğinizle ilişkilendirilmez. Paylaşılan bir
+                turnuvada girdiğiniz tüm isimlerin, o turnuvanın <strong>diğer katılımcıları ve izleyicileri
+                tarafından görülebildiğini</strong> unutmayın.
+            </p>
+            <p>
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+                    Firebase Gizlilik Politikası →
+                </a>
+            </p>
+
+            <h3>1c. Kamera — QR Kod Tarama</h3>
+            <p>
+                İzninizle Uygulama, <strong>kamerayı</strong> tek bir amaçla kullanır: bir turnuvaya katılabilmeniz
+                için katılım <strong>QR kodunu</strong> taramak. Hiçbir fotoğraf veya video çekilmez, saklanmaz ya da
+                iletilmez — kamera görüntüsü yalnızca kodu cihazınızda okumak için kullanılır. Kamera erişimini iOS
+                Ayarları'nda reddedebilir veya iptal edebilirsiniz; yine de bir turnuvaya linkini açarak
+                katılabilirsiniz.
+            </p>
+
+            <h3>1d. Bildirme ve Moderasyon</h3>
+            <p>
+                Saldırgan bir isme veya uygunsuz içeriğe sahip paylaşılmış bir turnuvayla karşılaşırsanız, onu
+                <strong>bildirebilirsiniz</strong>. Bir bildirim gönderdiğinizde, inceleyebilmemiz için (Firestore
+                aracılığıyla) turnuvanın tanımlayıcısını, seçtiğiniz nedeni, anonim tanımlayıcınızı ve bir zaman
+                damgasını bize gönderirsiniz. İzleyiciler ayrıca bildirilen bir turnuvayı kendi cihazlarından
+                kaldırabilir. Bu bilgileri yalnızca bildirimleri incelemek, bunlara göre işlem yapmak ve paylaşılan
+                içeriği Uygulamanın hedef kitlesine uygun tutmak için kullanırız.
+            </p>
+
+            <h3>1e. Analiz Verileri — Firebase Analytics</h3>
+            <p>
+                Uygulama, anonim kullanım olaylarını (örn. turnuva oluşturuldu, maç çözümlendi, uygulama açıldı)
+                toplamak için <strong>Google Firebase Analytics</strong> kullanır. Bu veriler yalnızca kullanıcıların
+                Uygulamayla nasıl etkileşim kurduğunu anlamak ve onu geliştirmek için kullanılır. Analiz olaylarına
+                isim, e-posta veya katılımcı verileri gibi kişisel olarak tanımlanabilir hiçbir bilgi (PII) dahil
+                edilmez.
+            </p>
+            <p>
+                Firebase Analytics şunları toplayabilir: cihaz modeli, işletim sistemi sürümü, uygulama sürümü,
+                ülke/bölge (yaklaşık), oturum süresi ve uygulama içi olaylar. Bu veriler toplulaştırılır ve
+                anonimleştirilir.
+            </p>
+            <p>
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+                    Firebase Gizlilik Politikası →
+                </a>
+            </p>
+
+            <h3>1f. Çökme Raporları — Firebase Crashlytics</h3>
+            <p>
+                Uygulama, çökmeleri ve hataları otomatik olarak raporlamak için <strong>Firebase
+                Crashlytics</strong> kullanır. Çökme raporları şunları içerebilir: cihaz modeli, iOS sürümü, uygulama
+                sürümü, yığın izleri (stack traces) ve çökme anındaki uygulama durumu. Çökme raporları turnuva
+                verilerinizi, katılımcı isimlerinizi ya da herhangi bir kişisel bilgiyi içermez.
+            </p>
+
+            <h3>1g. Reklamcılık — Google AdMob</h3>
+            <p>
+                Uygulama, <strong>Google AdMob</strong> tarafından sağlanan reklamları gösterir. Uygulama, Apple'ın
+                App Tracking Transparency (ATT) iznini <em>istemez</em> ve Reklam Tanımlayıcınızı (IDFA)
+                <em>kullanmaz</em>. Bu nedenle AdMob, yalnızca bağlamsal sinyallere (uygulama kategorisi, cihaz
+                dili/bölgesi) dayalı <strong>kişiselleştirilmemiş reklamlar</strong> sunar.
+            </p>
+            <p>
+                Avrupa Ekonomik Alanı (AEA) ve Birleşik Krallık'taki kullanıcılar için Uygulama, ilk açılışta bir
+                <strong>GDPR onay formu</strong> (Google'ın User Messaging Platform'u aracılığıyla) sunar. Onayınızı
+                Uygulamanın ayarlarından istediğiniz zaman geri çekebilir veya güncelleyebilirsiniz.
+            </p>
+            <p>
+                Tüm reklamlar, Uygulamanın 4+ yaş derecelendirmesiyle tutarlı olacak şekilde <strong>Genel izleyici
+                kitlesi içeriğiyle</strong> (<code>maxAdContentRating = .general</code>) sınırlıdır.
+            </p>
+            <p>
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+                    Google Gizlilik Politikası →
+                </a>
+                &nbsp;·&nbsp;
+                <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">
+                    AdMob ve Gizlilik →
+                </a>
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>2. Bilgileri Nasıl Kullanırız</h2>
+            <ul>
+                <li>Uygulamayı çalıştırmak ve geliştirmek için</li>
+                <li>Çökmeleri ve hataları teşhis edip düzeltmek için</li>
+                <li>Toplulaştırılmış kullanım kalıplarını anlamak için</li>
+                <li>Bağlamsal reklamlar göstermek için</li>
+            </ul>
+            <p>Verilerinizi üçüncü taraflara <strong>satmıyoruz</strong>. Verilerinizi hedefli reklamcılık için
+                kullanmıyor ve kişisel profiller oluşturmuyoruz.</p>
+
+            <hr class="section-divider">
+
+            <h2>3. Veri Paylaşımı</h2>
+            <p>Sınırlı verileri yalnızca aşağıdaki üçüncü taraf hizmet sağlayıcılarla ve yalnızca yukarıda açıklanan
+                amaçlar için paylaşırız:</p>
+            <ul>
+                <li><strong>Google LLC</strong> — Firebase Authentication, Firebase Firestore, Firebase Remote
+                    Config, Firebase Analytics, Firebase Crashlytics ve Google AdMob</li>
+            </ul>
+            <p>Tüm üçüncü taraf hizmetler, yukarıda bağlantısı verilen kendi gizlilik politikaları kapsamında
+                çalışır.</p>
+
+            <hr class="section-divider">
+
+            <h2>4. Verilerin Saklanması ve Silinmesi</h2>
+            <p>
+                Yerel turnuva verileri cihazınızda bulunur ve Uygulamayı kaldırdığınızda veya Uygulama içinde
+                turnuvaları elle sildiğinizde silinir.
+            </p>
+            <p>
+                Paylaştığınız veya katıldığınız turnuvalar için, Firebase Firestore'daki senkronize kopya, ev sahibi
+                turnuvayı silene veya turnuvanın lobi yaşam döngüsü sona erene kadar saklanır. İzleyici olarak, bir
+                turnuvayı istediğiniz zaman kendi cihazınızdan da kaldırabilirsiniz. Moderasyon bildirimleri,
+                incelenmeleri ve gereğinin yapılması için gerektiği sürece saklanır.
+            </p>
+            <p>
+                Analiz ve çökme verileri Google tarafından Firebase'in veri saklama politikalarına göre saklanır
+                (genellikle Analytics için 2 ay, Crashlytics için 90 gün).
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>5. Haklarınız</h2>
+
+            <h3><span class="badge">GDPR</span>AEA ve BK Kullanıcıları</h3>
+            <p>
+                Avrupa Ekonomik Alanı'nda veya Birleşik Krallık'ta bulunuyorsanız, kişisel verilerinize erişme,
+                bunları düzeltme veya silme ve veri işleme için verdiğiniz onayı istediğiniz zaman geri çekme
+                hakkına sahipsiniz. Google'ın elindeki veriler (Analytics, Crashlytics, AdMob) için talepleri
+                <a href="https://support.google.com/policies/troubleshooter/7575787" target="_blank" rel="noopener">
+                    Google'ın Gizlilik Sorun Gidericisi</a> aracılığıyla gönderebilirsiniz.
+                Diğer tüm talepler için aşağıdaki adresten bizimle iletişime geçin.
+            </p>
+
+            <h3><span class="badge">CCPA</span>Kaliforniya Sakinleri</h3>
+            <p>
+                Kişisel bilgileri satmıyoruz. Kaliforniya sakinleri, toplanan herhangi bir kişisel bilginin
+                açıklanmasını aşağıdaki adresten bizimle iletişime geçerek talep edebilir.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>6. Çocukların Gizliliği</h2>
+            <p>
+                Uygulama, App Store'da <strong>4+</strong> olarak derecelendirilmiştir. 13 yaşından küçük
+                çocuklardan bilerek kişisel bilgi toplamıyoruz. Firebase aracılığıyla toplanan analiz ve çökme
+                raporlama verileri anonimdir ve çocuklardan kişisel veri toplanmasını teşkil etmez. AdMob, yalnızca
+                genel izleyici kitlesine yönelik reklamlar sunacak şekilde yapılandırılmıştır. Paylaşılan
+                turnuvalarda girilen isimler kullanıcılar tarafından sağlanır ve diğer katılımcılar tarafından
+                görülebilir; bir turnuvayı paylaşır veya bir turnuvaya katılırsanız lütfen kişisel bilgi girmekten
+                kaçının ve uygunsuz içerikleri Uygulama içinden bildirebilirsiniz.
+            </p>
+            <p>
+                13 yaşından küçük bir çocuğa ait bilgileri istemeden topladığımızı düşünüyorsanız, lütfen hemen
+                bizimle iletişime geçin; bunları silmek için adım atacağız.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>7. Güvenlik</h2>
+            <p>
+                Yerel turnuva verileri cihazınızda iOS'un yerleşik veri korumasıyla korunur. Bir turnuvayı paylaştığınızda
+                veya bir turnuvaya katıldığınızda, verileri şifreli bağlantılar üzerinden iletilir ve Google'ın
+                altyapısında saklanır. Çevrimiçi turnuvalar, kimlik doğrulama, analiz, çökme raporlama ve reklam
+                sunumu için Google'ın sektör standardı güvenlik altyapısına güveniyoruz.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>8. Bu Politikadaki Değişiklikler</h2>
+            <p>
+                Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Bu sayfanın üst kısmındaki "Son güncelleme"
+                tarihi, en son revizyonu yansıtır. Değişiklikler yayınlandıktan sonra Uygulamayı kullanmaya devam
+                etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>9. Bize Ulaşın</h2>
+            <p>
+                Bu Gizlilik Politikası hakkında herhangi bir soru veya endişeniz varsa lütfen iletişime geçin:<br>
+                <strong>Filipe Rodrigues Oliveira</strong><br>
+                <a href="mailto:filipe.ro.ol@gmail.com">filipe.ro.ol@gmail.com</a>
+            </p>
+
+            <p class="content-footer">© 2026 Filipe Rodrigues Oliveira · EasyTourney</p>
+        </article>
+    </main>
+</body>
+
+</html>

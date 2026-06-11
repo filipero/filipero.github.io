@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacybeleid — EasyTourney</title>
+    <meta name="description"
+        content="Privacybeleid van EasyTourney — welke gegevens de app verzamelt, hoe ze worden gebruikt en jouw rechten.">
+    <link rel="canonical" href="https://filipero.github.io/nl/easytourney/privacy.html">
+    <link rel="alternate" hreflang="en" href="https://filipero.github.io/easytourney/privacy.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://filipero.github.io/pt/easytourney/privacy.html">
+    <link rel="alternate" hreflang="es" href="https://filipero.github.io/es/easytourney/privacy.html">
+    <link rel="alternate" hreflang="fr" href="https://filipero.github.io/fr/easytourney/privacy.html">
+    <link rel="alternate" hreflang="de" href="https://filipero.github.io/de/easytourney/privacy.html">
+    <link rel="alternate" hreflang="it" href="https://filipero.github.io/it/easytourney/privacy.html">
+    <link rel="alternate" hreflang="nl" href="https://filipero.github.io/nl/easytourney/privacy.html">
+    <link rel="alternate" hreflang="ru" href="https://filipero.github.io/ru/easytourney/privacy.html">
+    <link rel="alternate" hreflang="tr" href="https://filipero.github.io/tr/easytourney/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://filipero.github.io/easytourney/privacy.html">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header class="site-nav">
+        <div class="site-nav-inner">
+            <a class="brand" href="/nl/">Filipe Oliveira</a>
+            <div class="nav-right">
+                <nav class="nav-apps" aria-label="Apps">
+                    <details class="nav-app">
+                        <summary>EasyTourney</summary>
+                        <div class="nav-app-menu" role="menu">
+                            <a href="/nl/easytourney/" role="menuitem">Overzicht</a>
+                            <a href="/nl/easytourney/privacy.html" role="menuitem">Privacybeleid</a>
+                            <a href="/nl/easytourney/support.html" role="menuitem">Ondersteuning</a>
+                            <a href="https://apps.apple.com/app/apple-store/id6762071689?pt=128773250&amp;ct=EasyTourney-Campaign-01&amp;mt=8"
+                                role="menuitem">App Store</a>
+                        </div>
+                    </details>
+                </nav>
+                <details class="nav-app lang-select">
+                    <summary><span aria-hidden="true">🌐</span> NL</summary>
+                    <div class="nav-app-menu" role="menu" aria-label="Taal">
+                        <a href="/easytourney/privacy.html" role="menuitem" lang="en">English</a>
+                        <a href="/pt/easytourney/privacy.html" role="menuitem" lang="pt-BR">Português (BR)</a>
+                        <a href="/es/easytourney/privacy.html" role="menuitem" lang="es">Español</a>
+                        <a href="/fr/easytourney/privacy.html" role="menuitem" lang="fr">Français</a>
+                        <a href="/de/easytourney/privacy.html" role="menuitem" lang="de">Deutsch</a>
+                        <a href="/it/easytourney/privacy.html" role="menuitem" lang="it">Italiano</a>
+                        <a href="/nl/easytourney/privacy.html" role="menuitem" aria-current="true"
+                            lang="nl">Nederlands</a>
+                        <a href="/ru/easytourney/privacy.html" role="menuitem" lang="ru">Русский</a>
+                        <a href="/tr/easytourney/privacy.html" role="menuitem" lang="tr">Türkçe</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="content-card">
+            <p class="eyebrow">EasyTourney</p>
+            <h1>Privacybeleid</h1>
+            <p class="subtitle">Laatst bijgewerkt: 4 juni 2026</p>
+
+            <p>
+                EasyTourney ("de App") is een toernooibeheerder met enkele afvalronde voor iPhone en iPad,
+                ontwikkeld door Filipe Rodrigues Oliveira ("wij", "ons", "onze"). De App werkt
+                <strong>standaard offline</strong> en biedt daarnaast een <strong>optionele onlinemodus</strong>
+                waarmee je een toernooi kunt delen zodat anderen kunnen meedoen of kijken. Dit Privacybeleid legt uit
+                welke informatie wordt verzameld, hoe die wordt gebruikt en wat jouw rechten met betrekking tot die
+                informatie zijn.
+            </p>
+
+            <h2>1. Informatie die We Verzamelen</h2>
+
+            <h3>1a. Gegevens die Je Aanmaakt — Standaard Lokaal Opgeslagen</h3>
+            <p>
+                Wanneer je de App gebruikt, maak je toernooien aan en voer je deelnemersnamen in. Voor toernooien die
+                je voor jezelf houdt, <strong>blijven deze gegevens op je apparaat.</strong> Ze worden opgeslagen in
+                de lokale SwiftData-database van de app op je iPhone of iPad, wij hebben er geen toegang toe en ze
+                worden naar geen enkele server verzonden. Dit verandert alleen als je ervoor kiest een toernooi te
+                <strong>delen of eraan deel te nemen</strong> — zie <em>Online &amp; Deelbare Toernooien</em> hieronder.
+            </p>
+
+            <h3>1b. Online &amp; Deelbare Toernooien — Firebase Firestore &amp; Authenticatie</h3>
+            <p>
+                Met de App kun je een <strong>toernooi delen</strong> (via een QR-code of link) zodat andere mensen
+                eraan kunnen <strong>meedoen</strong> of het live kunnen <strong>volgen</strong>. Deze onlinemodus is
+                <strong>optioneel</strong> en alleen actief voor toernooien die je expliciet deelt of waaraan je
+                deelneemt — puur lokale toernooien worden nooit geüpload.
+            </p>
+            <p>
+                Wanneer je een gedeeld toernooi aanmaakt of meedoet aan dat van iemand anders, wordt het volgende
+                gesynchroniseerd via <strong>Google Firebase Firestore</strong>, zodat alle deelnemers en
+                toeschouwers hetzelfde zien: de toernooinaam en -instellingen, deelnemers- en teamnamen (inclusief
+                eventuele namen van teamleden), wedstrijduitslagen, scores en notities, jouw
+                <strong>weergavenaam</strong> en de weergavenaam van de host.
+            </p>
+            <p>
+                Om ieders weergave consistent te houden, meldt de App zich aan met <strong>Firebase Anonymous
+                Authentication</strong>, waarmee een stabiele anonieme identificatie aan je apparaat wordt toegekend.
+                Er is <strong>geen e-mailadres, wachtwoord of account</strong>, en deze identificatie is niet
+                gekoppeld aan je echte identiteit. Houd er rekening mee dat alle namen die je in een gedeeld toernooi
+                invoert <strong>zichtbaar zijn voor de andere deelnemers en toeschouwers</strong> van dat toernooi.
+            </p>
+            <p>
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+                    Privacybeleid van Firebase →
+                </a>
+            </p>
+
+            <h3>1c. Camera — QR-codes Scannen</h3>
+            <p>
+                Met jouw toestemming gebruikt de App de <strong>camera</strong> voor één doel: het scannen van de
+                <strong>QR-code</strong> van een toernooi zodat je eraan kunt meedoen. Er worden geen foto's of
+                video's gemaakt, opgeslagen of verzonden — het camerabeeld wordt uitsluitend gebruikt om de code op
+                je apparaat te lezen. Je kunt cameratoegang weigeren of intrekken in de iOS-instellingen; je kunt nog
+                steeds aan een toernooi meedoen door de link te openen.
+            </p>
+
+            <h3>1d. Rapporteren &amp; Moderatie</h3>
+            <p>
+                Als je een gedeeld toernooi tegenkomt met een beledigende naam of ongepaste inhoud, kun je het
+                <strong>rapporteren</strong>. Bij het indienen van een melding sturen we (via Firestore) de
+                identificatie van het toernooi, de reden die je hebt gekozen, je anonieme identificatie en een
+                tijdstempel, zodat we het kunnen beoordelen. Toeschouwers kunnen een gerapporteerd toernooi ook van
+                hun apparaat verwijderen. We gebruiken deze informatie uitsluitend om meldingen te beoordelen en
+                erop te reageren en om gedeelde inhoud passend te houden voor het publiek van de App.
+            </p>
+
+            <h3>1e. Analysegegevens — Firebase Analytics</h3>
+            <p>
+                De App gebruikt <strong>Google Firebase Analytics</strong> om anonieme gebruiksgebeurtenissen te
+                verzamelen (bijv. toernooi aangemaakt, wedstrijd opgelost, app geopend). Deze gegevens worden
+                uitsluitend gebruikt om te begrijpen hoe gebruikers met de App omgaan en om die te verbeteren. Er
+                wordt geen persoonlijk identificeerbare informatie (PII) zoals namen, e-mailadressen of
+                deelnemersgegevens in de analysegebeurtenissen opgenomen.
+            </p>
+            <p>
+                Firebase Analytics kan het volgende verzamelen: apparaatmodel, versie van het besturingssysteem,
+                app-versie, land/regio (bij benadering), sessieduur en gebeurtenissen in de app. Deze gegevens
+                worden geaggregeerd en geanonimiseerd.
+            </p>
+            <p>
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+                    Privacybeleid van Firebase →
+                </a>
+            </p>
+
+            <h3>1f. Crashrapporten — Firebase Crashlytics</h3>
+            <p>
+                De App gebruikt <strong>Firebase Crashlytics</strong> om crashes en fouten automatisch te
+                rapporteren. Crashrapporten kunnen het volgende bevatten: apparaatmodel, iOS-versie, app-versie,
+                stack traces en de toestand van de app op het moment van de crash. Crashrapporten bevatten geen
+                toernooigegevens, deelnemersnamen of andere persoonlijke informatie.
+            </p>
+
+            <h3>1g. Advertenties — Google AdMob</h3>
+            <p>
+                De App toont advertenties van <strong>Google AdMob</strong>. De App vraagt <em>niet</em> om Apples
+                App Tracking Transparency (ATT)-toestemming en gebruikt <em>niet</em> je advertentie-identificatie
+                (IDFA). AdMob toont daarom <strong>niet-gepersonaliseerde advertenties</strong> op basis van alleen
+                contextuele signalen (app-categorie, taal/regio van het apparaat).
+            </p>
+            <p>
+                Voor gebruikers in de Europese Economische Ruimte (EER) en het Verenigd Koninkrijk toont de App bij
+                de eerste keer opstarten een <strong>AVG-toestemmingsformulier</strong> (via Google's User Messaging
+                Platform). Je kunt je toestemming op elk moment intrekken of bijwerken via de instellingen van de App.
+            </p>
+            <p>
+                Alle advertenties zijn beperkt tot <strong>inhoud voor een algemeen publiek</strong>
+                (<code>maxAdContentRating = .general</code>), in overeenstemming met de leeftijdsclassificatie 4+ van
+                de App.
+            </p>
+            <p>
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+                    Privacybeleid van Google →
+                </a>
+                &nbsp;·&nbsp;
+                <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">
+                    AdMob &amp; Privacy →
+                </a>
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>2. Hoe We Informatie Gebruiken</h2>
+            <ul>
+                <li>Om de App te laten werken en te verbeteren</li>
+                <li>Om crashes en fouten te diagnosticeren en te verhelpen</li>
+                <li>Om geaggregeerde gebruikspatronen te begrijpen</li>
+                <li>Om contextuele advertenties te tonen</li>
+            </ul>
+            <p>We verkopen je gegevens <strong>niet</strong> aan derden. We gebruiken je gegevens niet voor gerichte
+                advertenties en stellen geen persoonlijke profielen op.</p>
+
+            <hr class="section-divider">
+
+            <h2>3. Gegevens Delen</h2>
+            <p>We delen beperkte gegevens uitsluitend met de volgende externe dienstverleners, alleen voor de
+                hierboven beschreven doeleinden:</p>
+            <ul>
+                <li><strong>Google LLC</strong> — Firebase Authentication, Firebase Firestore, Firebase Remote
+                    Config, Firebase Analytics, Firebase Crashlytics en Google AdMob</li>
+            </ul>
+            <p>Alle externe diensten werken onder hun eigen privacybeleid, hierboven gelinkt.</p>
+
+            <hr class="section-divider">
+
+            <h2>4. Bewaren &amp; Verwijderen van Gegevens</h2>
+            <p>
+                Lokale toernooigegevens staan op je apparaat en worden verwijderd wanneer je de App verwijdert of
+                toernooien handmatig binnen de App verwijdert.
+            </p>
+            <p>
+                Voor toernooien die je deelt of waaraan je deelneemt, wordt de gesynchroniseerde kopie in Firebase
+                Firestore bewaard totdat de host het toernooi verwijdert of de levenscyclus van de toernooilobby
+                eindigt. Als toeschouwer kun je een toernooi ook op elk moment van je eigen apparaat verwijderen.
+                Moderatiemeldingen worden bewaard zolang dat nodig is om ze te beoordelen en erop te reageren.
+            </p>
+            <p>
+                Analyse- en crashgegevens worden door Google bewaard volgens de bewaarbeleidsregels van Firebase
+                (doorgaans 2 maanden voor Analytics en 90 dagen voor Crashlytics).
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>5. Jouw Rechten</h2>
+
+            <h3><span class="badge">GDPR</span>Gebruikers in de EER &amp; het VK</h3>
+            <p>
+                Als je je in de Europese Economische Ruimte of het Verenigd Koninkrijk bevindt, heb je het recht om
+                je persoonsgegevens in te zien, te corrigeren of te verwijderen, en om je toestemming voor de
+                verwerking van gegevens op elk moment in te trekken. Voor gegevens die door Google worden bewaard
+                (Analytics, Crashlytics, AdMob) kun je verzoeken indienen via
+                <a href="https://support.google.com/policies/troubleshooter/7575787" target="_blank" rel="noopener">
+                    Google's Privacy-probleemoplosser</a>.
+                Voor alle andere verzoeken kun je contact met ons opnemen op het onderstaande adres.
+            </p>
+
+            <h3><span class="badge">CCPA</span>Inwoners van Californië</h3>
+            <p>
+                We verkopen geen persoonlijke informatie. Inwoners van Californië kunnen openbaarmaking van alle
+                verzamelde persoonlijke informatie aanvragen door contact met ons op te nemen op het onderstaande
+                adres.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>6. Privacy van Kinderen</h2>
+            <p>
+                De App heeft een leeftijdsclassificatie van <strong>4+</strong> in de App Store. We verzamelen niet
+                bewust persoonlijke informatie van kinderen onder de 13 jaar. De analyse- en crashrapportagegegevens
+                die via Firebase worden verzameld, zijn anoniem en vormen geen verzameling van persoonsgegevens van
+                kinderen. AdMob is geconfigureerd om alleen advertenties voor een algemeen publiek te tonen. Namen
+                die in gedeelde toernooien worden ingevoerd, worden door gebruikers verstrekt en zijn zichtbaar voor
+                andere deelnemers; als je een toernooi deelt of eraan deelneemt, voer dan geen persoonlijke
+                informatie in, en je kunt ongepaste inhoud vanuit de App rapporteren.
+            </p>
+            <p>
+                Als je denkt dat we per ongeluk informatie van een kind onder de 13 jaar hebben verzameld, neem dan
+                onmiddellijk contact met ons op en we zullen stappen ondernemen om die te verwijderen.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>7. Beveiliging</h2>
+            <p>
+                Lokale toernooigegevens worden beschermd door de ingebouwde gegevensbescherming van iOS op je
+                apparaat. Wanneer je een toernooi deelt of eraan deelneemt, worden de gegevens via versleutelde
+                verbindingen verzonden en op de infrastructuur van Google opgeslagen. We vertrouwen voor online
+                toernooien, authenticatie, analyse, crashrapportage en advertentielevering op de
+                beveiligingsinfrastructuur van Google die voldoet aan de industriestandaard.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>8. Wijzigingen in dit Beleid</h2>
+            <p>
+                We kunnen dit Privacybeleid van tijd tot tijd bijwerken. De datum "Laatst bijgewerkt" boven aan deze
+                pagina geeft de meest recente herziening weer. Voortgezet gebruik van de App nadat wijzigingen zijn
+                geplaatst, vormt aanvaarding van het bijgewerkte beleid.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>9. Contact</h2>
+            <p>
+                Als je vragen of zorgen hebt over dit Privacybeleid, neem dan contact op met:<br>
+                <strong>Filipe Rodrigues Oliveira</strong><br>
+                <a href="mailto:filipe.ro.ol@gmail.com">filipe.ro.ol@gmail.com</a>
+            </p>
+
+            <p class="content-footer">© 2026 Filipe Rodrigues Oliveira · EasyTourney</p>
+        </article>
+    </main>
+</body>
+
+</html>

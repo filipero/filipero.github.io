@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Politique de confidentialité — EasyTourney</title>
+    <meta name="description" content="Politique de confidentialité d'EasyTourney — quelles données l'application collecte, comment elles sont utilisées et vos droits.">
+    <link rel="canonical" href="https://filipero.github.io/fr/easytourney/privacy.html">
+    <link rel="alternate" hreflang="en" href="https://filipero.github.io/easytourney/privacy.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://filipero.github.io/pt/easytourney/privacy.html">
+    <link rel="alternate" hreflang="es" href="https://filipero.github.io/es/easytourney/privacy.html">
+    <link rel="alternate" hreflang="fr" href="https://filipero.github.io/fr/easytourney/privacy.html">
+    <link rel="alternate" hreflang="de" href="https://filipero.github.io/de/easytourney/privacy.html">
+    <link rel="alternate" hreflang="it" href="https://filipero.github.io/it/easytourney/privacy.html">
+    <link rel="alternate" hreflang="nl" href="https://filipero.github.io/nl/easytourney/privacy.html">
+    <link rel="alternate" hreflang="ru" href="https://filipero.github.io/ru/easytourney/privacy.html">
+    <link rel="alternate" hreflang="tr" href="https://filipero.github.io/tr/easytourney/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://filipero.github.io/easytourney/privacy.html">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header class="site-nav">
+        <div class="site-nav-inner">
+            <a class="brand" href="/fr/">Filipe Oliveira</a>
+            <div class="nav-right">
+                <nav class="nav-apps" aria-label="Applications">
+                    <details class="nav-app">
+                        <summary>EasyTourney</summary>
+                        <div class="nav-app-menu" role="menu">
+                            <a href="/fr/easytourney/" role="menuitem">Aperçu</a>
+                            <a href="/fr/easytourney/privacy.html" role="menuitem">Politique de confidentialité</a>
+                            <a href="/fr/easytourney/support.html" role="menuitem">Assistance</a>
+                            <a href="https://apps.apple.com/app/apple-store/id6762071689?pt=128773250&amp;ct=EasyTourney-Campaign-01&amp;mt=8"
+                                role="menuitem">App Store</a>
+                        </div>
+                    </details>
+                </nav>
+                <details class="nav-app lang-select">
+                    <summary><span aria-hidden="true">🌐</span> FR</summary>
+                    <div class="nav-app-menu" role="menu" aria-label="Langue">
+                        <a href="/easytourney/privacy.html" role="menuitem" lang="en">English</a>
+                        <a href="/pt/easytourney/privacy.html" role="menuitem" lang="pt-BR">Português (BR)</a>
+                        <a href="/es/easytourney/privacy.html" role="menuitem" lang="es">Español</a>
+                        <a href="/fr/easytourney/privacy.html" role="menuitem" aria-current="true" lang="fr">Français</a>
+                        <a href="/de/easytourney/privacy.html" role="menuitem" lang="de">Deutsch</a>
+                        <a href="/it/easytourney/privacy.html" role="menuitem" lang="it">Italiano</a>
+                        <a href="/nl/easytourney/privacy.html" role="menuitem" lang="nl">Nederlands</a>
+                        <a href="/ru/easytourney/privacy.html" role="menuitem" lang="ru">Русский</a>
+                        <a href="/tr/easytourney/privacy.html" role="menuitem" lang="tr">Türkçe</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="content-card">
+            <p class="eyebrow">EasyTourney</p>
+            <h1>Politique de confidentialité</h1>
+            <p class="subtitle">Dernière mise à jour : 4 juin 2026</p>
+
+            <p>
+                EasyTourney (« l'Application ») est un gestionnaire de tournois à élimination directe pour iPhone et iPad,
+                développé par Filipe Rodrigues Oliveira (« nous », « notre », « nos »). L'Application fonctionne
+                <strong>hors ligne par défaut</strong> et propose également un <strong>mode en ligne facultatif</strong>
+                qui vous permet de partager un tournoi afin que d'autres personnes puissent le rejoindre ou le regarder. La présente
+                Politique de confidentialité explique quelles informations sont collectées, comment elles sont utilisées
+                et vos droits concernant ces informations.
+            </p>
+
+            <h2>1. Informations que nous collectons</h2>
+
+            <h3>1a. Données que vous créez — stockées localement par défaut</h3>
+            <p>
+                Lorsque vous utilisez l'Application, vous créez des tournois et saisissez des noms de participants. Pour les tournois que vous gardez
+                pour vous, <strong>ces données restent sur votre appareil.</strong> Elles sont stockées dans la base de données
+                SwiftData locale de l'application sur votre iPhone ou iPad, nous n'y avons pas accès et elles ne sont transmises à aucun
+                serveur. Cela change uniquement si vous choisissez de <strong>partager ou de rejoindre</strong> un tournoi — voir
+                <em>Tournois en ligne et ouverts aux participants</em> ci-dessous.
+            </p>
+
+            <h3>1b. Tournois en ligne et ouverts aux participants — Firebase Firestore et Authentication</h3>
+            <p>
+                L'Application vous permet de <strong>partager un tournoi</strong> (via un QR code ou un lien) afin que d'autres personnes puissent
+                le <strong>rejoindre</strong> ou le <strong>regarder</strong> en direct. Ce mode en ligne est <strong>facultatif</strong>
+                et n'est actif que pour les tournois que vous partagez ou rejoignez explicitement — les tournois purement locaux ne sont jamais
+                téléversés.
+            </p>
+            <p>
+                Lorsque vous créez un tournoi partagé ou rejoignez celui de quelqu'un d'autre, les éléments suivants sont synchronisés via
+                <strong>Google Firebase Firestore</strong> afin que tous les participants et spectateurs restent synchronisés :
+                le nom et les réglages du tournoi, les noms des participants et des équipes (y compris les noms des membres des équipes),
+                les résultats des matchs, les scores et les notes, votre <strong>nom d'affichage</strong> et le nom d'affichage de l'hôte.
+            </p>
+            <p>
+                Pour que l'affichage reste cohérent pour tout le monde, l'Application se connecte via <strong>Firebase Anonymous
+                Authentication</strong> (authentification anonyme), qui attribue un identifiant anonyme stable à votre appareil. Il n'y a
+                <strong>ni e-mail, ni mot de passe, ni compte</strong>, et cet identifiant n'est pas lié à votre identité
+                réelle. Notez que tous les noms que vous saisissez dans un tournoi partagé sont
+                <strong>visibles par les autres participants et spectateurs</strong> de ce tournoi.
+            </p>
+            <p>
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+                    Politique de confidentialité de Firebase →
+                </a>
+            </p>
+
+            <h3>1c. Appareil photo — scan de QR codes</h3>
+            <p>
+                Avec votre autorisation, l'Application utilise l'<strong>appareil photo</strong> dans un seul but : scanner le
+                <strong>QR code</strong> d'invitation d'un tournoi afin que vous puissiez le rejoindre. Aucune photo ni vidéo n'est prise, stockée
+                ou transmise — le flux de l'appareil photo sert uniquement à lire le code sur votre appareil. Vous pouvez refuser ou
+                révoquer l'accès à l'appareil photo dans les Réglages iOS ; vous pourrez toujours rejoindre un tournoi en ouvrant son lien à la place.
+            </p>
+
+            <h3>1d. Signalement et modération</h3>
+            <p>
+                Si vous rencontrez un tournoi partagé au nom offensant ou au contenu inapproprié, vous pouvez le
+                <strong>signaler</strong>. L'envoi d'un signalement nous transmet (via Firestore) l'identifiant du tournoi,
+                le motif que vous avez sélectionné, votre identifiant anonyme et un horodatage, afin que nous puissions l'examiner. Les spectateurs
+                peuvent également retirer un tournoi signalé de leur appareil. Nous utilisons ces informations uniquement pour examiner les
+                signalements, y donner suite et garantir que le contenu partagé reste approprié pour le public de l'Application.
+            </p>
+
+            <h3>1e. Données d'analyse — Firebase Analytics</h3>
+            <p>
+                L'Application utilise <strong>Google Firebase Analytics</strong> pour collecter des événements d'utilisation anonymes
+                (par ex. tournoi créé, match résolu, application ouverte). Ces données servent uniquement à comprendre
+                comment les utilisateurs interagissent avec l'Application et à l'améliorer. Aucune information permettant d'identifier personnellement
+                (PII), telle que des noms, des e-mails ou des données de participants, n'est incluse dans les événements d'analyse.
+            </p>
+            <p>
+                Firebase Analytics peut collecter : le modèle de l'appareil, la version du système d'exploitation, la version de l'application, le pays/la région
+                (approximatif), la durée des sessions et les événements dans l'application. Ces données sont agrégées et anonymisées.
+            </p>
+            <p>
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+                    Politique de confidentialité de Firebase →
+                </a>
+            </p>
+
+            <h3>1f. Rapports de plantage — Firebase Crashlytics</h3>
+            <p>
+                L'Application utilise <strong>Firebase Crashlytics</strong> pour signaler automatiquement les plantages et les erreurs.
+                Les rapports de plantage peuvent inclure : le modèle de l'appareil, la version d'iOS, la version de l'application, les traces d'exécution et l'état
+                de l'application au moment du plantage. Les rapports de plantage n'incluent ni vos données de tournoi,
+                ni les noms des participants, ni aucune information personnelle.
+            </p>
+
+            <h3>1g. Publicité — Google AdMob</h3>
+            <p>
+                L'Application affiche des publicités fournies par <strong>Google AdMob</strong>. L'Application ne demande <em>pas</em>
+                l'autorisation App Tracking Transparency (ATT) d'Apple et n'utilise <em>pas</em> votre
+                identifiant publicitaire (IDFA). AdMob diffuse donc des <strong>publicités non personnalisées</strong> fondées
+                uniquement sur des signaux contextuels (catégorie de l'application, langue/région de l'appareil).
+            </p>
+            <p>
+                Pour les utilisateurs de l'Espace économique européen (EEE) et du Royaume-Uni, l'Application présente un
+                <strong>formulaire de consentement RGPD</strong> (via la User Messaging Platform de Google) au premier lancement.
+                Vous pouvez retirer ou mettre à jour votre consentement à tout moment dans les réglages de l'Application.
+            </p>
+            <p>
+                Toutes les publicités sont limitées à un <strong>contenu tous publics</strong>
+                (<code>maxAdContentRating = .general</code>), en cohérence avec la classification 4+ de l'Application.
+            </p>
+            <p>
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+                    Politique de confidentialité de Google →
+                </a>
+                &nbsp;·&nbsp;
+                <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">
+                    AdMob et confidentialité →
+                </a>
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>2. Comment nous utilisons les informations</h2>
+            <ul>
+                <li>Pour faire fonctionner et améliorer l'Application</li>
+                <li>Pour diagnostiquer et corriger les plantages et les erreurs</li>
+                <li>Pour comprendre les tendances d'utilisation agrégées</li>
+                <li>Pour afficher des publicités contextuelles</li>
+            </ul>
+            <p>Nous ne vendons <strong>pas</strong> vos données à des tiers. Nous n'utilisons pas vos données à des fins de
+                publicité ciblée et nous ne créons pas de profils personnels.</p>
+
+            <hr class="section-divider">
+
+            <h2>3. Partage des données</h2>
+            <p>Nous ne partageons des données limitées qu'avec les prestataires de services tiers suivants, uniquement aux
+                fins décrites ci-dessus :</p>
+            <ul>
+                <li><strong>Google LLC</strong> — Firebase Authentication, Firebase Firestore, Firebase Remote
+                    Config, Firebase Analytics, Firebase Crashlytics et Google AdMob</li>
+            </ul>
+            <p>Tous les services tiers fonctionnent selon leurs propres politiques de confidentialité, dont les liens figurent ci-dessus.</p>
+
+            <hr class="section-divider">
+
+            <h2>4. Conservation et suppression des données</h2>
+            <p>
+                Les données de tournoi locales résident sur votre appareil et sont supprimées lorsque vous désinstallez l'Application
+                ou supprimez manuellement des tournois dans l'Application.
+            </p>
+            <p>
+                Pour les tournois que vous partagez ou rejoignez, la copie synchronisée dans Firebase Firestore est conservée jusqu'à ce que
+                l'hôte supprime le tournoi ou que le cycle de vie du salon du tournoi prenne fin. En tant que spectateur, vous pouvez également
+                retirer un tournoi de votre propre appareil à tout moment. Les signalements de modération sont conservés aussi longtemps
+                que nécessaire pour les examiner et y donner suite.
+            </p>
+            <p>
+                Les données d'analyse et de plantage sont conservées par Google conformément aux politiques de conservation des données de Firebase
+                (généralement 2 mois pour Analytics, 90 jours pour Crashlytics).
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>5. Vos droits</h2>
+
+            <h3><span class="badge">GDPR</span>Utilisateurs de l'EEE et du Royaume-Uni</h3>
+            <p>
+                Si vous résidez dans l'Espace économique européen ou au Royaume-Uni, vous avez le droit d'accéder à vos
+                données personnelles, de les rectifier ou de les supprimer, ainsi que de retirer votre consentement au traitement des données à tout moment.
+                Pour les données détenues par Google (Analytics, Crashlytics, AdMob), vous pouvez soumettre vos demandes via
+                <a href="https://support.google.com/policies/troubleshooter/7575787" target="_blank" rel="noopener">
+                    l'assistant de confidentialité de Google</a>.
+                Pour toute autre demande, contactez-nous à l'adresse indiquée ci-dessous.
+            </p>
+
+            <h3><span class="badge">CCPA</span>Résidents de Californie</h3>
+            <p>
+                Nous ne vendons pas d'informations personnelles. Les résidents de Californie peuvent demander la divulgation des informations
+                personnelles collectées en nous contactant à l'adresse indiquée ci-dessous.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>6. Confidentialité des enfants</h2>
+            <p>
+                L'Application est classée <strong>4+</strong> sur l'App Store. Nous ne collectons pas sciemment d'informations
+                personnelles auprès d'enfants de moins de 13 ans. Les données d'analyse et de rapport de plantage collectées via
+                Firebase sont anonymes et ne constituent pas une collecte de données personnelles auprès d'enfants.
+                AdMob est configuré pour ne diffuser que des publicités tous publics. Les noms saisis dans les tournois partagés sont
+                fournis par les utilisateurs et visibles par les autres participants ; si vous partagez ou rejoignez un tournoi, évitez de
+                saisir des informations personnelles, et vous pouvez signaler tout contenu inapproprié depuis l'Application.
+            </p>
+            <p>
+                Si vous pensez que nous avons collecté par inadvertance des informations concernant un enfant de moins de 13 ans, veuillez nous contacter
+                immédiatement et nous prendrons les mesures nécessaires pour les supprimer.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>7. Sécurité</h2>
+            <p>
+                Les données de tournoi locales sont protégées par la protection des données intégrée à iOS sur votre appareil. Lorsque vous
+                partagez ou rejoignez un tournoi, ses données sont transmises via des connexions chiffrées et stockées sur
+                l'infrastructure de Google. Nous nous appuyons sur l'infrastructure de sécurité de Google, conforme aux normes du secteur, pour les
+                tournois en ligne, l'authentification, l'analyse, les rapports de plantage et la diffusion des publicités.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>8. Modifications de cette politique</h2>
+            <p>
+                Nous pouvons mettre à jour cette Politique de confidentialité de temps à autre. La date de « Dernière mise à jour » en haut de cette
+                page reflète la révision la plus récente. La poursuite de l'utilisation de l'Application après la publication de modifications
+                vaut acceptation de la politique mise à jour.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>9. Nous contacter</h2>
+            <p>
+                Si vous avez des questions ou des préoccupations concernant cette Politique de confidentialité, veuillez contacter :<br>
+                <strong>Filipe Rodrigues Oliveira</strong><br>
+                <a href="mailto:filipe.ro.ol@gmail.com">filipe.ro.ol@gmail.com</a>
+            </p>
+
+            <p class="content-footer">© 2026 Filipe Rodrigues Oliveira · EasyTourney</p>
+        </article>
+    </main>
+</body>
+
+</html>

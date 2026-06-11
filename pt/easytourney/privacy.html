@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Política de Privacidade — EasyTourney</title>
+    <meta name="description"
+        content="Política de Privacidade do EasyTourney — quais dados o app coleta, como são usados e seus direitos.">
+    <link rel="canonical" href="https://filipero.github.io/pt/easytourney/privacy.html">
+    <link rel="alternate" hreflang="en" href="https://filipero.github.io/easytourney/privacy.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://filipero.github.io/pt/easytourney/privacy.html">
+    <link rel="alternate" hreflang="es" href="https://filipero.github.io/es/easytourney/privacy.html">
+    <link rel="alternate" hreflang="fr" href="https://filipero.github.io/fr/easytourney/privacy.html">
+    <link rel="alternate" hreflang="de" href="https://filipero.github.io/de/easytourney/privacy.html">
+    <link rel="alternate" hreflang="it" href="https://filipero.github.io/it/easytourney/privacy.html">
+    <link rel="alternate" hreflang="nl" href="https://filipero.github.io/nl/easytourney/privacy.html">
+    <link rel="alternate" hreflang="ru" href="https://filipero.github.io/ru/easytourney/privacy.html">
+    <link rel="alternate" hreflang="tr" href="https://filipero.github.io/tr/easytourney/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://filipero.github.io/easytourney/privacy.html">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header class="site-nav">
+        <div class="site-nav-inner">
+            <a class="brand" href="/pt/">Filipe Oliveira</a>
+            <div class="nav-right">
+                <nav class="nav-apps" aria-label="Apps">
+                    <details class="nav-app">
+                        <summary>EasyTourney</summary>
+                        <div class="nav-app-menu" role="menu">
+                            <a href="/pt/easytourney/" role="menuitem">Visão geral</a>
+                            <a href="/pt/easytourney/privacy.html" role="menuitem">Política de Privacidade</a>
+                            <a href="/pt/easytourney/support.html" role="menuitem">Suporte</a>
+                            <a href="https://apps.apple.com/app/apple-store/id6762071689?pt=128773250&amp;ct=EasyTourney-Campaign-01&amp;mt=8"
+                                role="menuitem">App Store</a>
+                        </div>
+                    </details>
+                </nav>
+                <details class="nav-app lang-select">
+                    <summary><span aria-hidden="true">🌐</span> PT</summary>
+                    <div class="nav-app-menu" role="menu" aria-label="Idioma">
+                        <a href="/easytourney/privacy.html" role="menuitem" lang="en">English</a>
+                        <a href="/pt/easytourney/privacy.html" role="menuitem" aria-current="true"
+                            lang="pt-BR">Português (BR)</a>
+                        <a href="/es/easytourney/privacy.html" role="menuitem" lang="es">Español</a>
+                        <a href="/fr/easytourney/privacy.html" role="menuitem" lang="fr">Français</a>
+                        <a href="/de/easytourney/privacy.html" role="menuitem" lang="de">Deutsch</a>
+                        <a href="/it/easytourney/privacy.html" role="menuitem" lang="it">Italiano</a>
+                        <a href="/nl/easytourney/privacy.html" role="menuitem" lang="nl">Nederlands</a>
+                        <a href="/ru/easytourney/privacy.html" role="menuitem" lang="ru">Русский</a>
+                        <a href="/tr/easytourney/privacy.html" role="menuitem" lang="tr">Türkçe</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="content-card">
+            <p class="eyebrow">EasyTourney</p>
+            <h1>Política de Privacidade</h1>
+            <p class="subtitle">Última atualização: 4 de junho de 2026</p>
+
+            <p>
+                O EasyTourney ("o App") é um gerenciador de torneios de eliminação simples para iPhone e iPad,
+                desenvolvido por Filipe Rodrigues Oliveira ("nós", "nosso"). O App funciona
+                <strong>offline por padrão</strong> e também oferece um <strong>modo online opcional</strong> que
+                permite compartilhar um torneio para que outras pessoas entrem ou assistam. Esta Política de
+                Privacidade explica quais informações são coletadas, como são usadas e seus direitos em relação a
+                essas informações.
+            </p>
+
+            <h2>1. Informações que Coletamos</h2>
+
+            <h3>1a. Dados que Você Cria — Armazenados Localmente por Padrão</h3>
+            <p>
+                Ao usar o App, você cria torneios e insere nomes de participantes. Para torneios que você mantém só
+                para si, <strong>esses dados ficam no seu aparelho.</strong> Eles são armazenados no banco de dados
+                local SwiftData do app no seu iPhone ou iPad, não temos acesso a eles e nada é transmitido a nenhum
+                servidor. Isso muda apenas se você escolher <strong>compartilhar ou entrar</strong> em um torneio —
+                veja <em>Torneios Online e Compartilháveis</em> abaixo.
+            </p>
+
+            <h3>1b. Torneios Online e Compartilháveis — Firebase Firestore e Authentication</h3>
+            <p>
+                O App permite <strong>compartilhar um torneio</strong> (por QR code ou link) para que outras pessoas
+                possam <strong>entrar</strong> nele ou <strong>assistir</strong> ao vivo. Esse modo online é
+                <strong>opcional</strong> e só fica ativo para torneios que você compartilha ou nos quais entra
+                explicitamente — torneios puramente locais nunca são enviados.
+            </p>
+            <p>
+                Quando você cria um torneio compartilhado ou entra no de outra pessoa, os seguintes dados são
+                sincronizados pelo <strong>Google Firebase Firestore</strong> para que todos os participantes e
+                espectadores fiquem em sincronia: o nome e as configurações do torneio, os nomes de participantes e
+                equipes (incluindo nomes de integrantes de equipe), os resultados das partidas, placares e
+                anotações, o seu <strong>nome de exibição</strong> e o nome de exibição do anfitrião.
+            </p>
+            <p>
+                Para manter a visualização de todos consistente, o App faz login com o <strong>Firebase Anonymous
+                Authentication</strong>, que atribui um identificador anônimo estável ao seu aparelho. Não há
+                <strong>e-mail, senha ou conta</strong>, e esse identificador não é vinculado à sua identidade real.
+                Observe que quaisquer nomes inseridos em um torneio compartilhado ficam
+                <strong>visíveis para os outros participantes e espectadores</strong> daquele torneio.
+            </p>
+            <p>
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+                    Política de Privacidade do Firebase →
+                </a>
+            </p>
+
+            <h3>1c. Câmera — Leitura de QR Code</h3>
+            <p>
+                Com a sua permissão, o App usa a <strong>câmera</strong> para um único propósito: escanear o
+                <strong>QR code</strong> de entrada de um torneio para você poder entrar nele. Nenhuma foto ou vídeo
+                é capturado, armazenado ou transmitido — a imagem da câmera é usada apenas para ler o código no seu
+                aparelho. Você pode recusar ou revogar o acesso à câmera nos Ajustes do iOS; ainda é possível entrar
+                em um torneio abrindo o link.
+            </p>
+
+            <h3>1d. Denúncias e Moderação</h3>
+            <p>
+                Se você encontrar um torneio compartilhado com nome ofensivo ou conteúdo inadequado, pode
+                <strong>denunciá-lo</strong>. Ao enviar uma denúncia, recebemos (via Firestore) o identificador do
+                torneio, o motivo selecionado, o seu identificador anônimo e um carimbo de data/hora, para que
+                possamos analisá-la. Espectadores também podem remover um torneio denunciado do próprio aparelho.
+                Usamos essas informações exclusivamente para analisar e agir sobre denúncias e manter o conteúdo
+                compartilhado adequado ao público do App.
+            </p>
+
+            <h3>1e. Dados de Análise — Firebase Analytics</h3>
+            <p>
+                O App usa o <strong>Google Firebase Analytics</strong> para coletar eventos de uso anônimos
+                (por exemplo, torneio criado, partida resolvida, app aberto). Esses dados são usados exclusivamente
+                para entender como as pessoas interagem com o App e para melhorá-lo. Nenhuma informação de
+                identificação pessoal (PII), como nomes, e-mails ou dados de participantes, é incluída nos eventos
+                de análise.
+            </p>
+            <p>
+                O Firebase Analytics pode coletar: modelo do aparelho, versão do sistema operacional, versão do app,
+                país/região (aproximado), duração da sessão e eventos dentro do app. Esses dados são agregados e
+                anonimizados.
+            </p>
+            <p>
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+                    Política de Privacidade do Firebase →
+                </a>
+            </p>
+
+            <h3>1f. Relatórios de Falhas — Firebase Crashlytics</h3>
+            <p>
+                O App usa o <strong>Firebase Crashlytics</strong> para reportar falhas e erros automaticamente.
+                Os relatórios de falha podem incluir: modelo do aparelho, versão do iOS, versão do app, stack traces
+                e o estado do app no momento da falha. Os relatórios de falha não incluem seus dados de torneios,
+                nomes de participantes nem qualquer informação pessoal.
+            </p>
+
+            <h3>1g. Publicidade — Google AdMob</h3>
+            <p>
+                O App exibe anúncios fornecidos pelo <strong>Google AdMob</strong>. O App <em>não</em> solicita a
+                permissão de App Tracking Transparency (ATT) da Apple e <em>não</em> usa o seu Identificador de
+                Publicidade (IDFA). Por isso, o AdMob veicula <strong>anúncios não personalizados</strong>, baseados
+                apenas em sinais contextuais (categoria do app, idioma/região do aparelho).
+            </p>
+            <p>
+                Para usuários no Espaço Econômico Europeu (EEE) e no Reino Unido, o App apresenta um
+                <strong>formulário de consentimento GDPR</strong> (via User Messaging Platform do Google) na
+                primeira inicialização. Você pode retirar ou atualizar seu consentimento a qualquer momento nas
+                configurações do App.
+            </p>
+            <p>
+                Todos os anúncios são restritos a <strong>conteúdo para público geral</strong>
+                (<code>maxAdContentRating = .general</code>), em linha com a classificação etária 4+ do App.
+            </p>
+            <p>
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+                    Política de Privacidade do Google →
+                </a>
+                &nbsp;·&nbsp;
+                <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">
+                    AdMob e Privacidade →
+                </a>
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>2. Como Usamos as Informações</h2>
+            <ul>
+                <li>Para operar e melhorar o App</li>
+                <li>Para diagnosticar e corrigir falhas e erros</li>
+                <li>Para entender padrões de uso agregados</li>
+                <li>Para exibir anúncios contextuais</li>
+            </ul>
+            <p><strong>Não</strong> vendemos seus dados a terceiros. Não usamos seus dados para publicidade
+                direcionada nem criamos perfis pessoais.</p>
+
+            <hr class="section-divider">
+
+            <h2>3. Compartilhamento de Dados</h2>
+            <p>Compartilhamos dados limitados apenas com os seguintes prestadores de serviço terceirizados,
+                exclusivamente para os fins descritos acima:</p>
+            <ul>
+                <li><strong>Google LLC</strong> — Firebase Authentication, Firebase Firestore, Firebase Remote
+                    Config, Firebase Analytics, Firebase Crashlytics e Google AdMob</li>
+            </ul>
+            <p>Todos os serviços de terceiros operam sob suas próprias políticas de privacidade, com links acima.</p>
+
+            <hr class="section-divider">
+
+            <h2>4. Retenção e Exclusão de Dados</h2>
+            <p>
+                Os dados locais de torneios ficam no seu aparelho e são excluídos quando você desinstala o App
+                ou apaga torneios manualmente dentro do App.
+            </p>
+            <p>
+                Para torneios que você compartilha ou nos quais entra, a cópia sincronizada no Firebase Firestore é
+                mantida até o anfitrião excluir o torneio ou o ciclo de vida do lobby do torneio terminar. Como
+                espectador, você também pode remover um torneio do seu próprio aparelho a qualquer momento. As
+                denúncias de moderação são mantidas pelo tempo necessário para análise e providências.
+            </p>
+            <p>
+                Os dados de análise e de falhas são retidos pelo Google de acordo com as políticas de retenção do
+                Firebase (normalmente 2 meses para o Analytics e 90 dias para o Crashlytics).
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>5. Seus Direitos</h2>
+
+            <h3><span class="badge">GDPR</span>Usuários do EEE e Reino Unido</h3>
+            <p>
+                Se você está no Espaço Econômico Europeu ou no Reino Unido, tem o direito de acessar, corrigir ou
+                excluir seus dados pessoais, e de retirar o consentimento para o processamento de dados a qualquer
+                momento. Para dados mantidos pelo Google (Analytics, Crashlytics, AdMob), você pode enviar
+                solicitações pelo
+                <a href="https://support.google.com/policies/troubleshooter/7575787" target="_blank" rel="noopener">
+                    Solucionador de Problemas de Privacidade do Google</a>.
+                Para quaisquer outras solicitações, fale conosco pelo endereço abaixo.
+            </p>
+
+            <h3><span class="badge">CCPA</span>Residentes da Califórnia</h3>
+            <p>
+                Não vendemos informações pessoais. Residentes da Califórnia podem solicitar a divulgação de
+                quaisquer informações pessoais coletadas entrando em contato pelo endereço abaixo.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>6. Privacidade de Crianças</h2>
+            <p>
+                O App tem classificação <strong>4+</strong> na App Store. Não coletamos intencionalmente informações
+                pessoais de crianças menores de 13 anos. Os dados de análise e de relatórios de falha coletados pelo
+                Firebase são anônimos e não constituem coleta de dados pessoais de crianças. O AdMob está
+                configurado para veicular apenas anúncios para público geral. Os nomes inseridos em torneios
+                compartilhados são fornecidos pelos usuários e ficam visíveis aos outros participantes; se você
+                compartilhar ou entrar em um torneio, evite inserir informações pessoais, e é possível denunciar
+                qualquer conteúdo inadequado de dentro do App.
+            </p>
+            <p>
+                Se você acredita que coletamos inadvertidamente informações de uma criança menor de 13 anos, entre em
+                contato imediatamente e tomaremos as medidas para excluí-las.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>7. Segurança</h2>
+            <p>
+                Os dados locais de torneios são protegidos pela proteção de dados integrada do iOS no seu aparelho.
+                Quando você compartilha ou entra em um torneio, os dados são transmitidos por conexões
+                criptografadas e armazenados na infraestrutura do Google. Contamos com a infraestrutura de segurança
+                de padrão de mercado do Google para torneios online, autenticação, análise, relatórios de falha e
+                veiculação de anúncios.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>8. Alterações nesta Política</h2>
+            <p>
+                Podemos atualizar esta Política de Privacidade periodicamente. A data de "Última atualização" no
+                topo desta página reflete a revisão mais recente. O uso continuado do App após a publicação de
+                alterações constitui aceitação da política atualizada.
+            </p>
+
+            <hr class="section-divider">
+
+            <h2>9. Fale Conosco</h2>
+            <p>
+                Se você tiver qualquer dúvida ou preocupação sobre esta Política de Privacidade, entre em contato:<br>
+                <strong>Filipe Rodrigues Oliveira</strong><br>
+                <a href="mailto:filipe.ro.ol@gmail.com">filipe.ro.ol@gmail.com</a>
+            </p>
+
+            <p class="content-footer">© 2026 Filipe Rodrigues Oliveira · EasyTourney</p>
+        </article>
+    </main>
+</body>
+
+</html>

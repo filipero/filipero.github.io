@@ -381,6 +381,143 @@ h1 {
     margin-top: 2.5rem;
 }
 
+/* ---------- App landing page ---------- */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.lang-select > summary {
+    font-size: 0.85rem;
+}
+
+.nav-app-menu a[aria-current="true"] {
+    background: var(--accent-tint);
+    color: var(--accent-strong);
+}
+
+.landing-hero {
+    padding: clamp(32px, 6vw, 64px);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.landing-hero .app-icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 22px;
+    margin: 0 auto 24px;
+}
+
+.landing-hero h1 {
+    max-width: none;
+    margin: 0 auto 18px;
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+    line-height: 1.02;
+}
+
+.landing-hero .lead {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landing-hero .actions {
+    justify-content: center;
+}
+
+.store-note {
+    margin: 14px 0 0;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.landing-section {
+    margin-top: 40px;
+}
+
+.landing-section > h2 {
+    margin: 0;
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.feature {
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.feature-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.feature h3 {
+    margin: 12px 0 6px;
+    font-size: 1.05rem;
+}
+
+.feature p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+    counter-reset: step;
+}
+
+.step {
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.step::before {
+    counter-increment: step;
+    content: counter(step);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.step h3 {
+    margin: 12px 0 6px;
+    font-size: 1.05rem;
+}
+
+.step p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
 /* ---------- Redirect notice (used in old repo stubs) ---------- */
 
 .redirect-card {
@@ -412,8 +549,15 @@ h1 {
     .intro,
     .utility-links,
     .content-card,
-    .redirect-card {
+    .redirect-card,
+    .landing-hero,
+    .feature,
+    .step {
         background: rgba(23, 32, 38, 0.88);
+    }
+
+    .step::before {
+        color: #08131f;
     }
 
     .button:not(.secondary) {
@@ -429,6 +573,10 @@ h1 {
     }
 
     .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
         grid-template-columns: 1fr;
     }
 
@@ -459,5 +607,11 @@ h1 {
     .nav-app-menu {
         right: auto;
         left: 0;
+    }
+
+    .lang-select .nav-app-menu {
+        right: 0;
+        left: auto;
+        min-width: 170px;
     }
 }
